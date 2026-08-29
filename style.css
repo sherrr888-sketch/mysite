@@ -353,6 +353,49 @@ footer{
   font-size:14px;color:var(--muted);
 }
 
+/* ===== Mijozlar fikri ===== */
+.reviews{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.r-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:20px 20px 18px;
+  display:flex;flex-direction:column;gap:14px;
+}
+.r-card blockquote{
+  font-size:15.5px;line-height:1.6;color:var(--ink);
+}
+.r-card figcaption{
+  margin-top:auto;padding-top:14px;
+  border-top:1px solid var(--line);
+}
+.r-name{display:block;font-size:14.5px;font-weight:650;letter-spacing:-.01em}
+.r-org{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+
+/* ===== Savol-javob ===== */
+.faq{border-top:1px solid var(--line)}
+.q{border-bottom:1px solid var(--line)}
+.q summary{
+  list-style:none;cursor:pointer;
+  padding:18px 34px 18px 0;position:relative;
+  font-size:17px;font-weight:600;letter-spacing:-.01em;
+}
+.q summary::-webkit-details-marker{display:none}
+/* Ochilish belgisi — ikkita chiziqdan iborat "+", ochilganda "-" ga aylanadi */
+.q summary::before,
+.q summary::after{
+  content:"";position:absolute;right:4px;top:50%;
+  width:13px;height:1.5px;background:var(--accent);
+  transition:transform .2s ease;
+}
+.q summary::after{transform:rotate(90deg)}
+.q[open] summary::after{transform:rotate(0deg)}
+.q summary:hover{color:var(--accent)}
+.q > p{padding:0 34px 20px 0;color:var(--muted);font-size:15.5px}
+@media (prefers-reduced-motion: reduce){
+  .q summary::before,.q summary::after{transition:none}
+}
+
 /* ===== Skroll animatsiyasi (sinflar script.js dan) ===== */
 .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease, transform .5s ease}
 .reveal.is-visible{opacity:1;transform:none}
@@ -379,8 +422,20 @@ footer{
   .hero-photo{margin:18px 0 -62px;top:62px}
   .hc-slide img{aspect-ratio:16/10}
   .wrap{padding-top:112px}
-  .topbar nav{gap:18px}
+  /* Menyu markazda emas, chapdan boshlanadi va rejim tugmasi uchun
+     o'ng tomonda joy qoldiriladi — aks holda oxirgi havola tugma
+     ostida qolib ketadi. */
+  .bar{justify-content:flex-start;padding-right:54px}
+  .topbar nav{
+    flex:1;min-width:0;
+    gap:14px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+  .topbar nav::-webkit-scrollbar{display:none}
+  .topbar nav a{white-space:nowrap;font-size:12.5px}
+  .reviews{grid-template-columns:1fr}
   .theme-toggle{right:12px;width:32px;height:32px}
-  .topbar nav a{font-size:13px}
   .btn{flex:1 1 100%;justify-content:center}
 }
