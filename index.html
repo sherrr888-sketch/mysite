@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUHANDIS HIZMATI — Elektr ta'minoti tizimlari</title>
+<meta name="description" content="MUHANDIS HIZMATI — 5 yildan beri elektr ta'minoti tizimlarini loyihalash va qurish bilan shug'ullanuvchi korxona.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<script>
+  /* Sahifa chizilishidan OLDIN ishlashi shart — aks holda tungi rejimda
+     bir lahzaga oq ekran "chaqnab" ketadi. Qolgan mantiq script.js da. */
+  try {
+    var t = localStorage.getItem('tema');
+    if (t === 'dark' || t === 'light') {
+      document.documentElement.setAttribute('data-theme', t);
+    }
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<!-- ===== Yuqori panel ===== -->
+<div class="topbar">
+  <div class="bar">
+    <nav>
+      <a href="#xizmatlar">Xizmatlar</a>
+      <a href="#loyihalar">Loyihalar</a>
+      <a href="#aloqa">Aloqa</a>
+    </nav>
+
+    <button class="theme-toggle" id="tema-tugma" type="button"
+            aria-label="Kunduzgi / tungi rejimni almashtirish" title="Rejimni almashtirish">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+
+    <div class="hero-row">
+      <div class="hero-main">
+        <div class="hero-brand">
+          <span class="hero-brand-logo"><img src="logo.png" alt="MUHANDIS HIZMATI — Engineering Service"></span>
+          <span class="kicker light">Elektr ta'minoti tizimlari</span>
+        </div>
+        <h1>Loyihalashdan <i>ishga tushirishgacha</i></h1>
+        <p class="lead">
+          MUHANDIS HIZMATI — 5 yildan beri elektr ta'minoti tizimlarini
+          loyihalash va qurish bilan shug'ullanuvchi korxona.
+        </p>
+        <a class="cta" href="tel:+998994444899">
+          +998 99 444 48 99
+          <span class="cta-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="hero-side">
+        <span class="hero-side-label">Aloqa</span>
+        <div class="hero-icons">
+          <a href="tel:+998998901264" aria-label="+998 99 890 12 64" title="+998 99 890 12 64">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+          </a>
+          <a href="https://t.me/tuychiev2103" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.3-.5.5-1 .5l.4-4.8 8.7-7.9c.4-.3-.1-.5-.6-.2L6.1 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.2 1Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo hero-carousel" id="loyiha-karusel">
+      <div class="hc-track">
+        <figure class="hc-slide">
+          <img src="hero.jpg" alt="Hamkorbank markaziy binosi qurilishi, Andijon">
+          <figcaption>Hamkorbank markaziy binosi · Andijon — joriy loyiha</figcaption>
+        </figure>
+        <figure class="hc-slide">
+          <img src="alfraganus.jpg" alt="Alfraganus 35 kV podstansiyasi, Toshkent">
+          <figcaption>Alfraganus — 35 kV podstansiya · Toshkent, 2023</figcaption>
+        </figure>
+        <figure class="hc-slide">
+          <img src="korzinka.webp" alt="Korzinka logistika markazi, Toshkent viloyati">
+          <figcaption>Korzinka logistika markazi · Toshkent viloyati, 2025</figcaption>
+        </figure>
+        <figure class="hc-slide">
+          <img src="datacenter.jpg" alt="Data-markaz, Toshkent">
+          <figcaption>Data-markaz · Toshkent, 2024</figcaption>
+        </figure>
+      </div>
+      <div class="hc-dots"></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="wrap">
+
+  <!-- ===== Korxona haqida ===== -->
+  <section class="block">
+    <h2>Korxona haqida</h2>
+    <p>MUHANDIS HIZMATI — 5 yildan beri elektr ta'minoti tizimlarini loyihalash va qurish bilan shug'ullanuvchi korxona.</p>
+    <p>Ishimiz asosida aniq muhandislik hisobi, tartibli jarayon va mijoz bilan ochiq muloqot turadi.</p>
+
+    <div class="facts">
+      <div><strong>5+</strong><span>yillik tajriba</span></div>
+      <div><strong>To'liq sikl</strong><span>loyihadan ishga tushirishgacha</span></div>
+      <div><strong>Raqamli</strong><span>jarayon nazorati</span></div>
+    </div>
+  </section>
+
+  <div class="divider" id="xizmatlar"></div>
+  <p class="section-label">Xizmatlar</p>
+
+  <!-- ===== Xizmat 1 ===== -->
+  <section class="service">
+    <div class="s-side">
+      <span class="s-num">01</span>
+      <span class="s-tag">Ta'lim</span>
+    </div>
+    <div class="s-body">
+      <h3>Mijozlar uchun treninglar</h3>
+      <p>Elektr ta'minoti va muhandislik tizimlari bo'yicha amaliy o'quv mashg'ulotlari. Nazariya emas — real obyekt va real hujjatlar asosida.</p>
+      <ul class="s-list">
+        <li>Buyurtmachi va quruvchi jamoalar uchun bazaviy kurs</li>
+        <li>Loyiha hujjatlarini to'g'ri o'qish va tekshirish</li>
+        <li>Xavfsizlik talablari va tipik xatolar tahlili</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Xizmat 2 ===== -->
+  <section class="service">
+    <div class="s-side">
+      <span class="s-num">02</span>
+      <span class="s-tag">Hisob-kitob</span>
+    </div>
+    <div class="s-body">
+      <h3>Muhandislik tizimlari byudjetini hisoblash</h3>
+      <p>Qurilish loyihalarida muhandislik tizimlari uchun aniq smeta va byudjet hisobi. Qurilish boshlanishidan oldin raqam aniq bo'ladi.</p>
+      <ul class="s-list">
+        <li>Materiallar va uskunalar bo'yicha to'liq spetsifikatsiya</li>
+        <li>Ish hajmi va mehnat sarfi hisobi</li>
+        <li>Variantlarni taqqoslash va byudjetni optimallashtirish</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Xizmat 3 ===== -->
+  <section class="service">
+    <div class="s-side">
+      <span class="s-num">03</span>
+      <span class="s-tag">Raqamlashtirish</span>
+    </div>
+    <div class="s-body">
+      <h3>Ish jarayonini raqamlashtirish</h3>
+      <p>Obyektlardagi jarayonni raqamli nazorat va hisobot tizimiga o'tkazish. Har bir bosqich ko'rinadigan, o'lchanadigan va hujjatlashtirilgan bo'ladi.</p>
+      <ul class="s-list">
+        <li>Kunlik hisobot va bajarilgan ish nazorati</li>
+        <li>Material harakati va omborni yuritish</li>
+        <li>Rahbar uchun yagona ko'rish paneli</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider" id="loyihalar"></div>
+  <p class="section-label">Loyihalarimiz</p>
+
+  <!-- ===== Loyihalar ===== -->
+  <section class="block">
+    <div class="projects">
+
+      <article class="p-card">
+        <div class="p-img" style="--img:url('hero.jpg');background-position:center 62%"></div>
+        <div class="p-text">
+          <span class="p-meta">Andijon · Hozirda davom etmoqda</span>
+          <h3>Hamkorbank markaziy binosi</h3>
+          <p>Ko'p qavatli ma'muriy binoning energetika tizimi — loyihalash va qurish ishlari korxonamiz tomonidan olib borilmoqda.</p>
+        </div>
+      </article>
+
+      <article class="p-card">
+        <div class="p-img" style="--img:url('alfraganus.jpg')"></div>
+        <div class="p-text">
+          <span class="p-meta">Toshkent, Mirobod tumani · 2023</span>
+          <h3>Alfraganus — 35 kV podstansiya</h3>
+          <p>Savdo va turar-joy majmuasi ta'minoti uchun 35/10 kV kuchlanishli, 10 000 kVA (10 MVA) quvvatli podstansiya qurildi.</p>
+        </div>
+      </article>
+
+      <article class="p-card">
+        <div class="p-img" style="--img:url('korzinka.webp')"></div>
+        <div class="p-text">
+          <span class="p-meta">Toshkent viloyati · 2025</span>
+          <h3>Korzinka logistika markazi</h3>
+          <p>Obyektning <b>ichki elektr ta'minoti tizimlari</b> korxonamiz tomonidan qurildi. Majmua 10 gektar hududda joylashgan, 4 ta logistika blokidan iborat; ombor maydoni 49 000 m², bino o'lchami 372 × 121 m.</p>
+          <p class="p-specs-title">Bajarilgan ish</p>
+          <dl class="p-specs">
+            <div><dt>Montaj qilingan kabel</dt><dd>112 000 m</dd></div>
+            <div><dt>Kabel lotoklari</dt><dd>1 062 m</dd></div>
+            <div><dt>Mutaxassislar</dt><dd>22 nafar</dd></div>
+            <div><dt>Ish muddati</dt><dd>8 oy</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="p-card">
+        <div class="p-img" style="--img:url('datacenter.jpg')"></div>
+        <div class="p-text">
+          <span class="p-meta">Toshkent, Yunusobod tumani · 2024</span>
+          <h3>Data-markaz</h3>
+          <p>Binoning <b>elektr ta'minoti tizimlari</b> va podstansiya korxonamiz tomonidan qurib topshirildi. Obyekt 2024-yilda foydalanishga topshirilgan.</p>
+          <p class="p-specs-title">Bajarilgan ish</p>
+          <dl class="p-specs">
+            <div><dt>Podstansiya</dt><dd>2 × 1600 kVA</dd></div>
+            <div><dt>Kuchlanish</dt><dd>35/0,4 kV</dd></div>
+          </dl>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="divider" id="aloqa"></div>
+
+  <!-- ===== Aloqa ===== -->
+  <section class="block">
+    <h2>Aloqa</h2>
+    <p>Loyihangiz bo'yicha savol bo'lsa — qo'ng'iroq qiling yoki Telegram orqali yozing.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+998994444899">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+        +998 99 444 48 99
+      </a>
+      <a class="btn primary" href="tel:+998998901264">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+        +998 99 890 12 64
+      </a>
+      <a class="btn ghost" href="https://t.me/tuychiev2103" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.3-.5.5-1 .5l.4-4.8 8.7-7.9c.4-.3-.1-.5-.6-.2L6.1 13.1l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.2 1Z"/></svg>
+        Telegram
+      </a>
+    </div>
+  </section>
+
+  <footer>© <span id="year">2026</span> MUHANDIS HIZMATI · Engineering Service</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

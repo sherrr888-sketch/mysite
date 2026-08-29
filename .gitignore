@@ -1,0 +1,24 @@
+# ===== macOS tizim fayllari =====
+.DS_Store
+.AppleDouble
+._*
+
+# ===== Maxfiy ma'lumotlar =====
+# Parol, API kalit va shunga o'xshash narsalar shu fayllarda saqlanadi.
+# Ular hech qachon GitHub'ga chiqmasligi kerak.
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+
+# ===== Muharrir sozlamalari =====
+.vscode/
+.idea/
+*.swp
+*~
+
+# ===== Vaqtinchalik va keraksiz fayllar =====
+test.txt
+*.log
+Thumbs.db
