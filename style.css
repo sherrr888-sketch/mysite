@@ -135,7 +135,7 @@ a{color:inherit}
   padding:12px 18px;
   box-shadow:0 8px 20px rgba(0,0,0,.22);
 }
-.hero-brand-logo img{display:block;width:172px;height:auto}
+.hero-brand-logo img{display:block;width:250px;height:auto}
 .hero-brand .kicker{margin-bottom:0}
 
 /* Sarlavha + aloqa ikonlari qatori */
@@ -465,9 +465,9 @@ footer{
   .s-side{flex-direction:row;align-items:baseline;gap:12px}
   .s-num{font-size:20px}
   .s-body h3{font-size:20px}
-  .hero-brand{gap:9px;margin-bottom:12px}
+  .hero-brand{gap:9px 12px;margin-bottom:12px;flex-wrap:wrap}
   .hero-brand-logo{padding:9px 14px;border-radius:11px}
-  .hero-brand-logo img{width:128px}
+  .hero-brand-logo img{width:196px}
   .hero-row{flex-direction:column;align-items:flex-start;gap:22px}
   .hero-side{align-items:flex-start;padding-bottom:0}
   .hero-photo{margin:18px 0 -62px;top:62px}
