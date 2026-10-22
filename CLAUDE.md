@@ -9,6 +9,9 @@ javob oladi. Sayt tili — o'zbekcha.
 ## Uslub
 - Ranglar faqat `style.css` boshidagi o'zgaruvchilardan: `--bg`, `--ink`,
   `--muted`, `--line`, `--accent`, `--card`. Yangi rang qo'shilmaydi.
+  Istisno: "Nega biz" bo'limi (`.why`) — logotipdagi kabel ranglari
+  (sariq, yashil, havorang, qizil) faqat shu bo'lim ichida ishlatiladi,
+  ohangi ham jonliroq. Bu ranglar boshqa bo'limlarga tarqatilmaydi.
 - Kunduzgi va tungi rejim — ikkalasi ham ishlaydi. Har o'zgarish ikkisida
   ham tekshiriladi.
 - Ohang: tinch, ishonchli. "Eng yaxshi", "innovatsion", undov belgisi — yo'q.

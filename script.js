@@ -33,7 +33,7 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!reduceMotion && 'IntersectionObserver' in window) {
-    var blocks = document.querySelectorAll('.block, .service, .section-label, footer');
+    var blocks = document.querySelectorAll('.block, .why, .service, .section-label, footer');
 
     blocks.forEach(function (el) {
       el.classList.add('reveal');
