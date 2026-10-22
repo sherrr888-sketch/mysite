@@ -20,7 +20,7 @@
 <link rel="icon" href="favicon.png?v=20261021b">
 <link rel="apple-touch-icon" href="favicon.png?v=20261021b">
 <meta name="color-scheme" content="light dark">
-<link rel="stylesheet" href="style.css?v=20261022">
+<link rel="stylesheet" href="style.css?v=20261022d">
 <script>
   /* Sahifa chizilishidan OLDIN ishlashi shart — aks holda tungi rejimda
      bir lahzaga oq ekran "chaqnab" ketadi. Qolgan mantiq script.js da. */
@@ -83,7 +83,16 @@
         <span class="kicker light">Elektr ta'minoti tizimlari</span>
       </div>
     </div>
-    <div class="hc-dots"></div>
+    <!-- Qo'lda boshqarish: oldingi / keyingi tugmalari va nuqtalar -->
+    <div class="hc-nav">
+      <button class="hc-arrow" type="button" data-qadam="-1" aria-label="Oldingi loyiha">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="hc-dots"></div>
+      <button class="hc-arrow" type="button" data-qadam="1" aria-label="Keyingi loyiha">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
   </div>
 
   <div class="hero-inner">
@@ -228,6 +237,11 @@
           <span class="p-meta">Andijon · Hozirda davom etmoqda</span>
           <h3>Hamkorbank markaziy binosi</h3>
           <p>Ko'p qavatli ma'muriy binoning energetika tizimi — loyihalash va qurish ishlari korxonamiz tomonidan olib borilmoqda.</p>
+          <p class="p-specs-title">Loyiha</p>
+          <dl class="p-specs">
+            <div><dt>Buyurtmachi</dt><dd>Hamkorbank</dd></div>
+            <div><dt>Shahar</dt><dd>Andijon</dd></div>
+          </dl>
         </div>
       </article>
 
@@ -315,13 +329,14 @@
   <!-- ===== Mijozlar va hamkorlar (referens listdan) ===== -->
   <section class="block">
     <ul class="clients">
-      <li>Uzbekistan Art and Culture Development Foundation</li>
-      <li>Development and Marketing Group</li>
-      <li>Bizning Uylar Development</li>
-      <li>EVOS</li>
-      <li>TOKBOR</li>
-      <li>Aysel Energy</li>
-      <li>Barakat Alfa</li>
+      <li><img src="hamkorlar/hamkorbank.svg" alt="Hamkorbank" loading="lazy"><span>Hamkorbank</span></li>
+      <li><img src="hamkorlar/uacdf.jpg" alt="Uzbekistan Art and Culture Development Foundation" loading="lazy"><span>Uzbekistan Art and Culture Development Foundation</span></li>
+      <li><img src="hamkorlar/dmg.jpg" alt="Development and Marketing Group" loading="lazy"><span>Development and Marketing Group</span></li>
+      <li><img src="hamkorlar/bizninguylar.jpg" alt="Bizning Uylar Development" loading="lazy"><span>Bizning Uylar Development</span></li>
+      <li><img src="hamkorlar/evos.jpg" alt="EVOS" loading="lazy"><span>EVOS</span></li>
+      <li><img src="hamkorlar/tokbor.jpg" alt="TOKBOR" loading="lazy"><span>TOKBOR</span></li>
+      <li><img src="hamkorlar/aysel.jpg" alt="Aysel Energy" loading="lazy"><span>Aysel Energy</span></li>
+      <li><img src="hamkorlar/barakat.jpg" alt="Barakat Alfa" loading="lazy"><span>Barakat Alfa</span></li>
     </ul>
   </section>
 
@@ -454,6 +469,6 @@
 
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=20261022c"></script>
 </body>
 </html>

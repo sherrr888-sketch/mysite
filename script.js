@@ -76,6 +76,15 @@
 
     var nuqtalar = dotsWrap.querySelectorAll('.hc-dot');
 
+    // Oldingi / keyingi tugmalari
+    karusel.querySelectorAll('.hc-arrow').forEach(function (tugma) {
+      tugma.addEventListener('click', function () {
+        var qadam = Number(tugma.getAttribute('data-qadam'));
+        boradi((joriy + qadam + slaydlar.length) % slaydlar.length);
+        qaytaBoshla();
+      });
+    });
+
     function boradi(i) {
       joriy = i;
       track.style.transform = 'translateX(-' + (100 * joriy) + '%)';
@@ -88,15 +97,14 @@
       boradi((joriy + 1) % slaydlar.length);
     }
 
+    // Karusel doim aylanadi. Sichqoncha ustida turganda to'xtatilmaydi: karusel
+    // hero'ning katta qismini egallaydi va kursor deyarli doim uning ustida bo'ladi.
+    // "Harakatni kamaytirish" yoqilgan qurilmada slaydlar silliq siljimasdan
+    // birdan almashadi (style.css), lekin baribir almashadi.
     function qaytaBoshla() {
       clearInterval(vaqt);
-      if (!reduceMotion) {
-        vaqt = setInterval(keyingi, 4500);
-      }
+      vaqt = setInterval(keyingi, 3500);
     }
-
-    karusel.addEventListener('mouseenter', function () { clearInterval(vaqt); });
-    karusel.addEventListener('mouseleave', qaytaBoshla);
 
     qaytaBoshla();
   }
