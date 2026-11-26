@@ -8,7 +8,8 @@ yetkazish yo'nalishi, saytda hali yozilmaydi). 2026-11-26 dan brend —
 EnISA, yuridik shaxs — MChJ "MUHANDIS HIZMATI": rekvizitlarda korxona nomi
 qoladi, EnISA ga almashtirilmaydi. Domen muhandishizmati.uz o'zgarmagan.
 Logotip `logo-export/` da (vektor `logo.svg`); belgi va Telegram rasmi
-(`favicon.png`, `og.jpg`) shu logotipdan. O'quvchi — potensial mijoz: telefonda
+(`favicon.png`, `og.jpg`) shu logotipdan. Karusel ustida `logo-oq.png` (ko'k qismlar oq,
+bronza o'zgarmagan; oq plashkasiz, soya bilan); oq fonda — `logo.png`. O'quvchi — potensial mijoz: telefonda
 ochadi va 30 soniyada "kim, nima qiladi, qanday bog'lanaman" degan savolga
 javob oladi. Sayt tili — o'zbekcha.
 

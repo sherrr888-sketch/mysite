@@ -142,10 +142,9 @@ a{color:inherit}
 }
 .hero-brand-logo{
   display:inline-flex;flex:none;
-  background:#fff;
-  border-radius:13px;
-  padding:12px 18px;
-  box-shadow:0 8px 20px rgba(0,0,0,.22);
+  /* Oq plashka yo'q: oq-bronza logotip to'g'ridan-to'g'ri rasm ustida.
+     Yengil soya yorug' suratlarda ham chetini ajratib turadi. */
+  filter:drop-shadow(0 1px 2px rgba(0,0,0,.55)) drop-shadow(0 2px 10px rgba(0,0,0,.35));
 }
 .hero-brand-logo img{display:block;width:280px;height:auto}
 
@@ -592,7 +591,6 @@ footer{
   .s-num{font-size:20px}
   .s-body h3{font-size:20px}
   .hero-brand{gap:9px 12px;flex-wrap:wrap}
-  .hero-brand-logo{padding:9px 14px;border-radius:11px}
   .hero-brand-logo img{width:200px}
   .hero-row{flex-direction:column;align-items:flex-start;gap:22px}
   .hero-side{align-items:flex-start;padding-bottom:0}
