@@ -210,17 +210,24 @@ a{color:inherit}
 .hc-slide{
   position:relative;flex:0 0 100%;width:100%;
 }
+/* Pastdagi yengil soya — fonsiz izoh va tugmalar yorug' suratda ham o'qiladi
+   (yuqoridagi logotip soyasining aksi) */
+.hc-slide::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:38%;
+  background:linear-gradient(0deg,rgba(8,15,36,.55) 0%,rgba(8,15,36,.2) 55%,rgba(8,15,36,0) 100%);
+  pointer-events:none;
+}
 .hc-slide img{
   display:block;width:100%;
   height:clamp(340px,62vh,680px);object-fit:cover;object-position:center 40%;
 }
 /* Izoh va nuqtalar matn ustuni chetlariga tekislanadi */
 .hc-slide figcaption{
-  position:absolute;left:max(14px,calc((100% - var(--maxw)) / 2 + 20px));bottom:16px;
-  padding:8px 14px;border-radius:999px;
-  background:rgba(10,18,40,.72);
-  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
-  font-size:12.5px;color:rgba(255,255,255,.9);
+  position:absolute;z-index:1;left:max(14px,calc((100% - var(--maxw)) / 2 + 20px));bottom:16px;
+  /* Fonsiz (logotip kabi): o'qilishini soya beradi */
+  padding:8px 0;
+  font-size:12.5px;font-weight:500;color:#fff;
+  text-shadow:0 1px 2px rgba(0,0,0,.75),0 0 12px rgba(0,0,0,.45);
 }
 .hc-nav{
   position:absolute;right:max(14px,calc((100% - var(--maxw)) / 2 + 20px));bottom:14px;z-index:3;
@@ -231,13 +238,13 @@ a{color:inherit}
 .hc-arrow{
   display:flex;align-items:center;justify-content:center;
   width:32px;height:32px;padding:0;border-radius:50%;
-  background:rgba(10,18,40,.55);color:#fff;
-  border:1px solid rgba(255,255,255,.3);
-  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  background:transparent;color:#fff;
+  border:1.5px solid rgba(255,255,255,.85);
+  filter:drop-shadow(0 1px 3px rgba(0,0,0,.55));
   cursor:pointer;
   transition:background .15s ease, border-color .15s ease;
 }
-.hc-arrow:hover{background:rgba(10,18,40,.8);border-color:rgba(255,255,255,.6)}
+.hc-arrow:hover{background:rgba(255,255,255,.16);border-color:#fff}
 .hc-arrow svg{width:16px;height:16px}
 .hc-dot{
   width:7px;height:7px;padding:0;border:none;border-radius:50%;
@@ -362,11 +369,10 @@ p + p{margin-top:12px}
 .p-shot .p-img{aspect-ratio:4/5;border-bottom:0}
 .p-shot figcaption{
   position:absolute;left:12px;bottom:12px;
-  padding:6px 12px;border-radius:999px;
-  background:rgba(10,18,40,.72);
-  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:6px 0;
   font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
-  font-weight:600;color:rgba(255,255,255,.92);
+  font-weight:600;color:#fff;
+  text-shadow:0 1px 2px rgba(0,0,0,.75),0 0 12px rgba(0,0,0,.45);
 }
 
 /* ===== Nega biz =====
@@ -584,7 +590,7 @@ footer{
   .hero .lead{font-size:17px}
   .projects{grid-template-columns:1fr}
   .p-shot .p-img{aspect-ratio:3/4}
-  .p-shot figcaption{left:8px;bottom:8px;padding:4px 9px;font-size:10px;letter-spacing:.06em}
+  .p-shot figcaption{left:10px;bottom:8px;padding:4px 0;font-size:10px;letter-spacing:.06em}
   .steps{grid-template-columns:1fr 1fr;gap:12px}
   .service{grid-template-columns:1fr;gap:10px;padding:30px 0}
   .s-side{flex-direction:row;align-items:baseline;gap:12px}
