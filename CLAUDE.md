@@ -2,7 +2,9 @@
 
 ## Loyiha nima
 Bir sahifali vizitka-sayt: EnISA brendi (MEP Engineering & Distribution;
-elektr ta'minoti tizimlarini loyihalash va qurish). 2026-11-26 dan brend —
+muhandislik tizimlari integratori: elektr, ventilyatsiya, suv, kam tokli,
+BMS/GRMS/PMS — loyihadan ishga tushirishgacha; Distribution — kelajakdagi jihoz
+yetkazish yo'nalishi, saytda hali yozilmaydi). 2026-11-26 dan brend —
 EnISA, yuridik shaxs — MChJ "MUHANDIS HIZMATI": rekvizitlarda korxona nomi
 qoladi, EnISA ga almashtirilmaydi. Domen muhandishizmati.uz o'zgarmagan.
 Logotip `logo-export/` da (vektor `logo.svg`); belgi va Telegram rasmi
