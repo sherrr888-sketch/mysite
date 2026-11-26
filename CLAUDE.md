@@ -1,17 +1,22 @@
-# CLAUDE.md — MUHANDIS HIZMATI sayti
+# CLAUDE.md — EnISA sayti
 
 ## Loyiha nima
-Bir sahifali vizitka-sayt: "MUHANDIS HIZMATI" korxonasi (elektr ta'minoti
-tizimlarini loyihalash va qurish). O'quvchi — potensial mijoz: telefonda
+Bir sahifali vizitka-sayt: EnISA brendi (MEP Engineering & Distribution;
+elektr ta'minoti tizimlarini loyihalash va qurish). 2026-11-26 dan brend —
+EnISA, yuridik shaxs — MChJ "MUHANDIS HIZMATI": rekvizitlarda korxona nomi
+qoladi, EnISA ga almashtirilmaydi. Domen muhandishizmati.uz o'zgarmagan.
+Logotip `logo-export/` da (vektor `logo.svg`); belgi va Telegram rasmi
+(`favicon.png`, `og.jpg`) shu logotipdan. O'quvchi — potensial mijoz: telefonda
 ochadi va 30 soniyada "kim, nima qiladi, qanday bog'lanaman" degan savolga
 javob oladi. Sayt tili — o'zbekcha.
 
 ## Uslub
 - Ranglar faqat `style.css` boshidagi o'zgaruvchilardan: `--bg`, `--ink`,
-  `--muted`, `--line`, `--accent`, `--card`. Yangi rang qo'shilmaydi.
-  Istisno: "Nega biz" bo'limi (`.why`) — logotipdagi kabel ranglari
-  (sariq, yashil, havorang, qizil) faqat shu bo'lim ichida ishlatiladi,
-  ohangi ham jonliroq. Bu ranglar boshqa bo'limlarga tarqatilmaydi.
+  `--muted`, `--line`, `--accent` (EnISA ko'ki #1a3773), `--bronze`
+  (logotip bronzasi, faqat kichik urg'u: xizmat raqamlari, ro'yxat nuqtalari),
+  `--card`. Yangi rang qo'shilmaydi.
+  Istisno: "Nega biz" bo'limi (`.why`) — logotipdagi bronza va och ko'k
+  faqat shu bo'lim ichida yorqinroq ishlatiladi.
 - Kunduzgi va tungi rejim — ikkalasi ham ishlaydi. Har o'zgarish ikkisida
   ham tekshiriladi.
 - Ohang: tinch, ishonchli. "Eng yaxshi", "innovatsion", undov belgisi — yo'q.

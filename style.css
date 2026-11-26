@@ -4,8 +4,9 @@
   --ink:#1d1a16;
   --muted:#6d6459;
   --line:#e9e1d5;
-  --accent:#1a4663;
-  --accent-soft:#eef2f6;
+  --accent:#1a3773;
+  --accent-soft:#eef1f8;
+  --bronze:#8a6538;
   --card:#fffdf9;
   --topbar:rgba(250,246,240,.88);
   --shadow:rgba(29,26,22,.07);
@@ -21,8 +22,9 @@
     --ink:#f0eae1;
     --muted:#a1978a;
     --line:#2e2820;
-    --accent:#8ab8dd;
-    --accent-soft:#1c2b38;
+    --accent:#9db4e6;
+    --accent-soft:#1a2440;
+    --bronze:#d0a673;
     --card:#1d1913;
     --topbar:rgba(21,18,14,.9);
     --shadow:rgba(0,0,0,.4);
@@ -35,8 +37,9 @@
   --ink:#f0eae1;
   --muted:#a1978a;
   --line:#2e2820;
-  --accent:#8ab8dd;
-  --accent-soft:#1c2b38;
+  --accent:#9db4e6;
+  --accent-soft:#1a2440;
+  --bronze:#d0a673;
   --card:#1d1913;
   --topbar:rgba(21,18,14,.9);
   --shadow:rgba(0,0,0,.4);
@@ -105,22 +108,22 @@ a{color:inherit}
   position:relative;
   color:#fff;
   background-image:
-    radial-gradient(120% 90% at 50% 0%, rgba(90,150,200,.22), rgba(90,150,200,0) 60%),
-    linear-gradient(160deg,#143752 0%,#1a4663 45%,#0d2334 100%);
+    radial-gradient(120% 90% at 50% 0%, rgba(110,140,215,.22), rgba(110,140,215,0) 60%),
+    linear-gradient(160deg,#1f4189 0%,#1a3773 45%,#0e1f45 100%);
 }
 /* Tungi rejimda hero fon rangi ham chuqurroq bo'ladi */
 :root[data-theme="dark"] .hero,
 :root[data-theme="dark"] .why{
   background-image:
-    radial-gradient(120% 90% at 50% 0%, rgba(90,150,200,.14), rgba(90,150,200,0) 60%),
-    linear-gradient(160deg,#0e2434 0%,#123246 45%,#07141d 100%);
+    radial-gradient(120% 90% at 50% 0%, rgba(110,140,215,.14), rgba(110,140,215,0) 60%),
+    linear-gradient(160deg,#13295a 0%,#122a59 45%,#08122b 100%);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]) .hero,
   :root:not([data-theme="light"]) .why{
     background-image:
-      radial-gradient(120% 90% at 50% 0%, rgba(90,150,200,.14), rgba(90,150,200,0) 60%),
-      linear-gradient(160deg,#0e2434 0%,#123246 45%,#07141d 100%);
+      radial-gradient(120% 90% at 50% 0%, rgba(110,140,215,.14), rgba(110,140,215,0) 60%),
+      linear-gradient(160deg,#13295a 0%,#122a59 45%,#08122b 100%);
   }
 }
 
@@ -131,7 +134,7 @@ a{color:inherit}
 .hero-brand-bar{
   position:absolute;top:0;left:0;right:0;z-index:3;
   padding:24px 28px 64px;
-  background:linear-gradient(180deg,rgba(8,20,30,.62) 0%,rgba(8,20,30,.28) 55%,rgba(8,20,30,0) 100%);
+  background:linear-gradient(180deg,rgba(8,15,36,.62) 0%,rgba(8,15,36,.28) 55%,rgba(8,15,36,0) 100%);
   pointer-events:none;
 }
 .hero-brand{
@@ -144,7 +147,7 @@ a{color:inherit}
   padding:12px 18px;
   box-shadow:0 8px 20px rgba(0,0,0,.22);
 }
-.hero-brand-logo img{display:block;width:250px;height:auto}
+.hero-brand-logo img{display:block;width:280px;height:auto}
 .hero-brand .kicker{margin-bottom:0;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.45)}
 
 /* Sarlavha + aloqa ikonlari qatori */
@@ -164,7 +167,7 @@ a{color:inherit}
 .cta{
   display:inline-flex;align-items:center;gap:14px;
   padding:9px 9px 9px 24px;
-  background:#fff;color:#12314a;
+  background:#fff;color:#1a3773;
   border-radius:999px;
   text-decoration:none;font-weight:600;font-size:16.5px;
   transition:transform .15s ease, box-shadow .15s ease;
@@ -173,7 +176,7 @@ a{color:inherit}
 .cta-arrow{
   display:flex;align-items:center;justify-content:center;
   width:34px;height:34px;border-radius:50%;
-  background:#12314a;color:#fff;
+  background:#1a3773;color:#fff;
 }
 .cta-arrow svg{width:16px;height:16px}
 
@@ -217,7 +220,7 @@ a{color:inherit}
 .hc-slide figcaption{
   position:absolute;left:max(14px,calc((100% - var(--maxw)) / 2 + 20px));bottom:16px;
   padding:8px 14px;border-radius:999px;
-  background:rgba(10,22,33,.72);
+  background:rgba(10,18,40,.72);
   backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
   font-size:12.5px;color:rgba(255,255,255,.9);
 }
@@ -230,13 +233,13 @@ a{color:inherit}
 .hc-arrow{
   display:flex;align-items:center;justify-content:center;
   width:32px;height:32px;padding:0;border-radius:50%;
-  background:rgba(10,22,33,.55);color:#fff;
+  background:rgba(10,18,40,.55);color:#fff;
   border:1px solid rgba(255,255,255,.3);
   backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
   cursor:pointer;
   transition:background .15s ease, border-color .15s ease;
 }
-.hc-arrow:hover{background:rgba(10,22,33,.8);border-color:rgba(255,255,255,.6)}
+.hc-arrow:hover{background:rgba(10,18,40,.8);border-color:rgba(255,255,255,.6)}
 .hc-arrow svg{width:16px;height:16px}
 .hc-dot{
   width:7px;height:7px;padding:0;border:none;border-radius:50%;
@@ -285,7 +288,7 @@ p + p{margin-top:12px}
 .service:last-of-type{border-bottom:0}
 .s-side{display:flex;flex-direction:column;gap:8px;padding-top:4px}
 .s-num{
-  font-size:26px;font-weight:660;color:var(--accent);
+  font-size:26px;font-weight:660;color:var(--bronze);
   letter-spacing:-.02em;line-height:1;
 }
 .s-tag{
@@ -301,7 +304,7 @@ p + p{margin-top:12px}
 }
 .s-list li::before{
   content:"";position:absolute;left:4px;top:11px;
-  width:7px;height:7px;border-radius:2px;background:var(--accent);opacity:.55;
+  width:7px;height:7px;border-radius:2px;background:var(--bronze);opacity:.8;
 }
 
 /* ===== Loyihalar ===== */
@@ -318,7 +321,7 @@ p + p{margin-top:12px}
   aspect-ratio:16/10;
   background:
     var(--img, none),
-    linear-gradient(135deg,#e8eef3,#dbe4ec 60%,#cfd9e3);
+    linear-gradient(135deg,#e9ecf4,#dde2ee 60%,#d1d8e8);
   background-size:cover;
   background-position:center;
   border-bottom:1px solid var(--line);
@@ -362,26 +365,26 @@ p + p{margin-top:12px}
 .p-shot figcaption{
   position:absolute;left:12px;bottom:12px;
   padding:6px 12px;border-radius:999px;
-  background:rgba(10,22,33,.72);
+  background:rgba(10,18,40,.72);
   backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
   font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
   font-weight:600;color:rgba(255,255,255,.92);
 }
 
 /* ===== Nega biz =====
-   Saytdagi yagona rangli bo'lim. Ranglar logotipdagi kabellardan olingan
-   (CLAUDE.md'dagi istisno) va faqat shu bo'lim ichida ishlatiladi. */
+   Saytdagi yagona rangli bo'lim. Logotipdagi bronza va och ko'k
+   (CLAUDE.md'dagi istisno) faqat shu bo'lim ichida ishlatiladi. */
 .why{
-  --sariq:#f2c230;--yashil:#3cb46a;--havorang:#8ab8dd;--qizil:#e5504a;
+  --bronza:#c99a66;--kok:#9db4e6;
   margin:28px 0 8px;padding:40px 28px 32px;border-radius:20px;
   color:#fff;
   background-image:
-    radial-gradient(120% 90% at 50% 0%, rgba(90,150,200,.22), rgba(90,150,200,0) 60%),
-    linear-gradient(160deg,#143752 0%,#1a4663 45%,#0d2334 100%);
+    radial-gradient(120% 90% at 50% 0%, rgba(110,140,215,.22), rgba(110,140,215,0) 60%),
+    linear-gradient(160deg,#1f4189 0%,#1a3773 45%,#0e1f45 100%);
 }
 .why-kicker{
   font-size:12px;letter-spacing:.16em;text-transform:uppercase;
-  font-weight:650;color:var(--sariq);
+  font-weight:650;color:var(--bronza);
 }
 .why-title{
   margin-top:10px;max-width:24em;
@@ -392,7 +395,7 @@ p + p{margin-top:12px}
   display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
 }
 .why-card{
-  --c:var(--sariq);
+  --c:var(--kok);
   position:relative;overflow:hidden;
   padding:18px 16px 18px 20px;border-radius:14px;
   background:rgba(255,255,255,.06);
@@ -403,13 +406,11 @@ p + p{margin-top:12px}
 .why-card::before{
   content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c);
 }
-.why-card.yashil{--c:var(--yashil)}
-.why-card.havorang{--c:var(--havorang)}
-.why-card.qizil{--c:var(--qizil)}
+.why-card.bronza{--c:var(--bronza)}
 .why-icon{
   display:flex;align-items:center;justify-content:center;
   width:38px;height:38px;border-radius:11px;
-  background:var(--c);color:#10222f;
+  background:var(--c);color:#0f1d3d;
 }
 .why-icon svg{width:19px;height:19px}
 .why-card h3{margin:14px 0 6px;font-size:17px;line-height:1.3;font-weight:650;color:#fff}
@@ -464,9 +465,9 @@ p + p{margin-top:12px}
 }
 .btn:hover{transform:translateY(-1px);opacity:.92}
 .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
-:root[data-theme="dark"] .btn.primary{color:#10222f}
+:root[data-theme="dark"] .btn.primary{color:#0f1d3d}
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]) .btn.primary{color:#10222f}
+  :root:not([data-theme="light"]) .btn.primary{color:#0f1d3d}
 }
 .btn.ghost{background:var(--card);color:var(--ink)}
 .btn.light{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.32)}
@@ -593,10 +594,11 @@ footer{
   .s-body h3{font-size:20px}
   .hero-brand{gap:9px 12px;flex-wrap:wrap}
   .hero-brand-logo{padding:9px 14px;border-radius:11px}
-  .hero-brand-logo img{width:196px}
+  .hero-brand-logo img{width:200px}
   .hero-row{flex-direction:column;align-items:flex-start;gap:22px}
   .hero-side{align-items:flex-start;padding-bottom:0}
-  .hc-slide img{height:auto;aspect-ratio:4/3}
+  /* Rasm biroz baland: tor ekranda logotip va izoh bir-biriga tegmaydi */
+  .hc-slide img{height:auto;aspect-ratio:5/4}
   /* Tor ekranda izoh nuqtalar ustiga chiqmasin: nuqtalar izoh ostida, markazda */
   .hc-slide figcaption{bottom:54px;max-width:calc(100% - 28px);font-size:12px}
   .hc-nav{right:auto;left:50%;bottom:12px;transform:translateX(-50%)}

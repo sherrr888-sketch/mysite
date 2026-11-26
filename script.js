@@ -1,4 +1,4 @@
-// MUHANDIS HIZMATI — sayt skriptlari
+// EnISA — sayt skriptlari
 
 (function () {
   'use strict';
